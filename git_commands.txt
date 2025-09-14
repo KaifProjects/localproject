@@ -1,0 +1,47 @@
+Git offers a comprehensive set of commands for version control. These commands can be broadly categorized based on their function:
+
+1. Setting up and Initializing Repositories:
+==>
+git init: Initializes a new Git repository in the current directory.
+git clone <URL>: Creates a local copy of a remote repository.
+git config: Configures Git settings, such as user name and email. 
+
+2. Managing Changes:
+==>
+git add <file> / git add .: Stages changes in a specific file or all modified files for the next commit.
+git status: Shows the current state of the working directory and staging area.
+git diff: Shows changes in unstaged files or between staged and committed versions.
+git commit -m "message": Records staged changes to the repository with a descriptive message.
+git rm <file>: Removes a file from the working directory and stages the deletion.
+git mv <old_name> <new_name>: Renames a file and stages the change.
+
+3. Branching and Merging:
+==>
+git branch: Lists, creates, or deletes branches.
+git checkout <branch_name>: Switches to a different branch.      // Green color of name of the branch shows, in which branch you are present 
+git checkout -b <new_branch_name>: Creates a new branch and switches to it. 
+git branch -d <new_branch_name>: delete a branch (if already merged). 
+git branch -D <new_branch_name>: forcefully delete a branch (even if not merge) . 
+git merge <branch_name>: Merges changes from a specified branch into the current branch.
+git rebase <branch_name>: Rewrites commit history by moving commits to a new base.
+
+4. Working with Remote Repositories:
+==>
+git remote: Manages remote repositories.
+git fetch: Downloads objects and refs from another repository.
+git pull: Fetches and integrates changes from a remote repository.
+git push <remote_name> <branch_name>: Uploads local commits to a remote repository.
+
+5. Inspecting History and Objects:
+==>
+git log: Shows the commit history.
+git show <commit_hash>: Shows details of a specific commit or object.
+git tag: Manages tags for marking specific points in history.
+
+6. Undoing Changes:
+
+git reset: Resets the staging area or working directory to a specific commit.
+git revert <commit_hash>: Creates a new commit that undoes the changes of a previous commit.
+git stash: Temporarily saves changes in a "stash" for later application.
+
+This list provides an overview of commonly used Git commands. Many commands also have various options and flags for more specific functionality.
